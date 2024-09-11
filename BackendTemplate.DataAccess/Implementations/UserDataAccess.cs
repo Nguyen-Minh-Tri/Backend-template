@@ -1,4 +1,4 @@
-namespace BackendTemplate.DataAccess.Implementations;
+namespace BackendTemplate.DataAccess;
 
 public class UserDataAccess : BaseDataAccess<User>, IUserDataAccess 
 {
