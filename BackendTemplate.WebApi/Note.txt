@@ -1,0 +1,4 @@
+To specify --project and --startup-project:
+
+dotnet ef migrations add NameOfTheUpdate --project BackendTemplate.DataAccess --startup-project BackendTemplate.WebApi
+dotnet ef database update --project BackendTemplate.DataAccess --startup-project BackendTemplate.WebApi

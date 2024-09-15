@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
     
+    
 builder.Services.AddScoped<IUserDataAccess, UserDataAccess>();
 
 var app = builder.Build();
