@@ -1,4 +1,7 @@
-To specify --project and --startup-project:
+# Specify project that's holding the DbContext and startup project:
 
+# 1. Create migration:
 dotnet ef migrations add NameOfTheUpdate --project BackendTemplate.DataAccess --startup-project BackendTemplate.WebApi
+
+# 2. Send update to the database 
 dotnet ef database update --project BackendTemplate.DataAccess --startup-project BackendTemplate.WebApi
